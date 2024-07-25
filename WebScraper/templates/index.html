@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty 50 Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Nifty 50 Data</h1>
+    <div class="card">
+        <h2>Date: {{ data.Date or 'No data available' }}</h2>
+        <p>Open: {{ data.Open or 'No data available' }}</p>
+        <p>High: {{ data.High or 'No data available' }}</p>
+        <p>Low: {{ data.Low or 'No data available' }}</p>
+        <p>Close: {{ data.Close or 'No data available' }}</p>
+        <p>Volume: {{ data.Volume or 'No data available' }}</p>
+    </div>
+</body>
+</html>
